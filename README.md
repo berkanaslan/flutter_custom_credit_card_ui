@@ -9,3 +9,16 @@ Implement a simple flutter library to render a beautiful credit card ui with car
 </p>
 
 ## Features
+
+ - Card Detection.
+ - Adjust UI
+
+## Todo
+
+ - [x]  Pusblished to pub.dev.
+ - []  PR Documents.
+ - []  Widely adjustment like positioning and ui.
+
+
+## Author
+- **@LyhourChhen**
