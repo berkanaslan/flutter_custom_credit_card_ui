@@ -167,7 +167,7 @@ class _CustomCreditCardState extends State<CustomCreditCard> {
           top: 0,
           left: 25,
           child: Container(
-            child: Image.asset("assets/creditCardStyleTop.png"),
+            child: Image.asset("assets/icons/creditCardStyleTop.png"),
             height: 53,
             width: 23,
           ),
@@ -177,7 +177,7 @@ class _CustomCreditCardState extends State<CustomCreditCard> {
           right: 343 / 2,
           child: Container(
             child: Image.asset(
-              "assets/creditCardStyleBottom.png",
+              "assets/icons/creditCardStyleBottom.png",
             ),
             height: 53,
             width: 23,

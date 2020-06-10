@@ -1,5 +1,5 @@
 name: flutter_custom_credit_card_ui
-description: A new Flutter package project.
+description: Implement a flutter library to render a beautiful credit card ui.
 version: 0.0.1
 author: LyhourChhen
 homepage: https://github.com/LyhourChhen/flutter_custom_credit_card_ui
@@ -11,6 +11,8 @@ dependencies:
   flutter:
     sdk: flutter
   credit_card_type_detector: ^1.0.2
+  font_awesome_flutter: ^8.8.1
+
 
 dev_dependencies:
   flutter_test:
@@ -23,5 +25,5 @@ flutter:
         - asset: assets/fonts/Poppins-Medium.ttf
 
   assets:
-    - assets/creditCardStyleTop.png
-    - assets/creditCardStyleBottom.png
+    - assets/icons/creditCardStyleTop.png
+    - assets/icons/creditCardStyleBottom.png
