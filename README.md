@@ -40,5 +40,5 @@ CustomCreditCard(
 
 
 ## Author
-- **@LyhourChhen**
-**2020**
+- [**@LyhourChhen**](https://t.me/lyhourchhen)
+- **2020**
