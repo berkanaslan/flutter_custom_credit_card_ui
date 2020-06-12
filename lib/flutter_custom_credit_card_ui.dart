@@ -17,11 +17,15 @@ class CustomCreditCard extends StatefulWidget {
     @required this.cardHolder,
     @required this.month,
     @required this.year,
+    this.isGradient = true,
+    this.bgColor = Colors.blueAccent,
   });
   String cardNumber;
   String cardHolder;
   int month;
   int year;
+  bool isGradient;
+  Color bgColor;
   @override
   _CustomCreditCardState createState() => _CustomCreditCardState();
 }
@@ -62,26 +66,26 @@ class _CustomCreditCardState extends State<CustomCreditCard> {
   IconData renderCreditCardIconUI(String creditCardNumber) {
     var icons;
     var type = detectCCType(creditCardNumber);
+    print(type);
     if (type == CreditCardType.visa) {
       return icons = FontAwesomeIcons.ccVisa;
-    }
-    if (type == CreditCardType.mastercard) {
+    } else if (type == CreditCardType.mastercard) {
       return icons = FontAwesomeIcons.ccMastercard;
-    }
-    if (type == CreditCardType.unknown) {
+    } else if (type == CreditCardType.unknown) {
+      return icons = FontAwesomeIcons.solidCreditCard;
+    } else {
       return icons = FontAwesomeIcons.solidCreditCard;
     }
-    return icons;
   }
 
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: <Widget>[
-//        Image.asset("assets/icons/creditCardStyleTop.png"),
         Container(
             decoration: BoxDecoration(
-              gradient: bgColor[randomColor],
+              gradient: widget.isGradient ? bgColor[randomColor] : null,
+              color: widget.isGradient != true ? widget.bgColor : null,
               borderRadius: BorderRadius.circular(15),
             ),
             height: 190,
@@ -115,8 +119,9 @@ class _CustomCreditCardState extends State<CustomCreditCard> {
                       Container(
                         child: Text(
                           renderCreditCardNumberUI(
-                            widget.cardNumber == null
-                                ? "1234123412346666"
+                            widget.cardNumber == null ||
+                                    widget.cardNumber.length == 0
+                                ? "0000000000000000"
                                 : widget.cardNumber,
                           ),
                           style: CreditNumber,
@@ -139,8 +144,9 @@ class _CustomCreditCardState extends State<CustomCreditCard> {
                           ),
                           SizedBox(height: 4),
                           Text(
-                            widget.cardHolder == null
-                                ? "Jonh Doe"
+                            widget.cardHolder == null ||
+                                    widget.cardHolder.length == 0
+                                ? "Your Name"
                                 : widget.cardHolder,
                             style: childStyle,
                           ),
@@ -154,7 +160,7 @@ class _CustomCreditCardState extends State<CustomCreditCard> {
                           ),
                           SizedBox(height: 4),
                           Text(
-                            "${widget.month == null ? "00" : widget.month}/${widget.year == null ? "00" : widget.year}",
+                            "${widget.month.toString() == null || widget.month.toString().length == 0 ? "00" : widget.month}/${widget.year.toString() == null || widget.year.toString().length == 0 ? "00" : widget.year}",
                             style: childStyle,
                           ),
                         ],

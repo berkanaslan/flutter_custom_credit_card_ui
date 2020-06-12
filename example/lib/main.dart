@@ -29,6 +29,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  DateTime _dateTime = DateTime.now();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,8 +44,8 @@ class _MyHomePageState extends State<MyHomePage> {
               child: CustomCreditCard(
                 cardNumber: "5500000000000004",
                 cardHolder: "LyhourChhen",
-                year: 19,
-                month: 20,
+                year: _dateTime.year,
+                month: _dateTime.month,
               ),
             ),
             SizedBox(
@@ -52,10 +53,10 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Container(
               child: CustomCreditCard(
-                cardNumber: "4111111111111111",
+                cardNumber: "34111111111111111",
                 cardHolder: "LyhourChhen",
-                year: 26,
-                month: 21,
+                year: _dateTime.year,
+                month: _dateTime.month,
               ),
             )
           ],
