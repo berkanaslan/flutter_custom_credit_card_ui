@@ -33,10 +33,9 @@ CustomCreditCard(
 ## Todo
 
  - [x]  Pusblished to pub.dev.
- - [ ] PR Documents.
+ - [x] How to use?
+ - [x] Library changelog.
  - [ ] Widely adjustment like positioning and ui.
- - [ ] How to use?
- - [ ] Library changelog.
 
 
 
