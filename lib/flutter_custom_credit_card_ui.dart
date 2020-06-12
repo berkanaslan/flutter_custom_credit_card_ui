@@ -78,6 +78,7 @@ class _CustomCreditCardState extends State<CustomCreditCard> {
   Widget build(BuildContext context) {
     return Stack(
       children: <Widget>[
+//        Image.asset("assets/icons/creditCardStyleTop.png"),
         Container(
             decoration: BoxDecoration(
               gradient: bgColor[randomColor],
@@ -167,7 +168,12 @@ class _CustomCreditCardState extends State<CustomCreditCard> {
           top: 0,
           left: 25,
           child: Container(
-            child: Image.asset("assets/icons/creditCardStyleTop.png"),
+            child: Image.asset(
+              "assets/icons/creditCardStyleTop.png",
+              width: 10,
+              height: 10,
+              package: "flutter_custom_credit_card_ui",
+            ),
             height: 53,
             width: 23,
           ),
@@ -178,6 +184,7 @@ class _CustomCreditCardState extends State<CustomCreditCard> {
           child: Container(
             child: Image.asset(
               "assets/icons/creditCardStyleBottom.png",
+              package: "flutter_custom_credit_card_ui",
             ),
             height: 53,
             width: 23,
