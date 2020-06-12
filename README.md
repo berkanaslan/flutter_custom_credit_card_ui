@@ -12,6 +12,23 @@ Implement a simple flutter library to render a beautiful credit card ui with car
 
  - Card Detection.
  - Adjust UI
+ 
+## How to use? 
+
+**Import Package**
+```dart
+import "package:flutter_custom_credit_card_ui/flutter_custom_credit_card_ui.dart";
+```
+**Components use**
+```dart
+CustomCreditCard(
+                cardNumber: "34111111111111111",
+                cardHolder: "LyhourChhen",
+                year: _dateTime.year,
+                month: _dateTime.month,
+              ),
+
+```
 
 ## Todo
 
