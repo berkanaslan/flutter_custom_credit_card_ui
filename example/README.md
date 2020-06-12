@@ -1,4 +1,4 @@
-# flutter_custom_credit_card_ui's Example
+# Flutter Custom CreditCard UI's Example
 
 ## Author
 - **LyhourChhen**
