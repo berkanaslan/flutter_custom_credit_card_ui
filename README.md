@@ -1,5 +1,5 @@
 # Flutter Custom CreditCard UI
-[![pub package](https://img.shields.io/badge/pub-0.0.1-blueviolet.svg)(https://pub.dev/packages/flutter_custom_credit_card)
+[![pub package](https://img.shields.io/badge/pub-0.0.1-blueviolet.svg)
 
 
 Implement a simple flutter library to render a beautiful credit card ui with card detection.
