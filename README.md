@@ -1,6 +1,6 @@
 # Flutter Custom CreditCard UI
 
-[![pub package](https://img.shields.io/badge/pub-1.1.1-blueviolet.svg)](https://pub.dev/packages/flutter_custom_credit_card_ui)
+[![pub package](https://img.shields.io/badge/pub-0.0.1-blueviolet.svg)](https://pub.dev/packages/flutter_custom_credit_card_ui)
 
 
 
