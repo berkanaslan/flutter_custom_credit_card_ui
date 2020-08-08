@@ -67,7 +67,7 @@ class _CustomCreditCardState extends State<CustomCreditCard> {
 
   @override
   void initState() {
-    var rng = new Random().nextInt(3);
+    var rng = new Random().nextInt(4);
     setState(() {
       randomColor = rng;
     });
