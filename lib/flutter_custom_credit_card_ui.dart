@@ -54,9 +54,16 @@ class _CustomCreditCardState extends State<CustomCreditCard> {
       colors: [
         Color(0xffff0055),
         Color(0xff000066),
-      ])
+      ]);
+  static final fourthColor = LinearGradient(
+      begin: Alignment.topLeft,
+      end: Alignment.bottomRight,
+      colors: [
+        Color(0xff29323c),
+        Color(0xff485563),
+      ]);
 
-  final bgColor = <LinearGradient>[firstColor, secondColor, thirdColor];
+  final bgColor = <LinearGradient>[firstColor, secondColor, thirdColor, fourthColor];
 
   @override
   void initState() {
